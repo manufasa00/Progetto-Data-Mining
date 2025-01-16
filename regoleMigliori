@@ -1,0 +1,140 @@
+=== Run information ===
+
+Scheme:       weka.associations.Apriori -N 100 -T 0 -C 0.5 -D 0.05 -U 0.4 -M 0.1 -S -1.0 -A -c 1
+Relation:     new_dataset-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-C1-Lfirst-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-C2-Lfirst-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-C3-Lfirst-weka.filters.unsupervised.attribute.Remove-R4-5,13-17-weka.filters.unsupervised.attribute.Remove-R7
+Instances:    2216
+Attributes:   9
+              Bullied_in_school
+              Bullied_outside_school
+              Cyber_bullied
+              Physically_attacked
+              Physical_fighting
+              Felt_lonely
+              Miss_school_no_permission
+              Other_students_kind_and_helpful
+              Parents_understand_problems
+=== Associator model (full training set) ===
+
+
+Apriori
+=======
+
+Minimum support: 0.15 (332 instances)
+Minimum metric <confidence>: 0.5
+Number of cycles performed: 17
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 19
+
+Size of set of large itemsets L(2): 53
+
+Size of set of large itemsets L(3): 55
+
+Size of set of large itemsets L(4): 22
+
+Size of set of large itemsets L(5): 2
+
+Best rules found:
+
+  1. Physically_attacked=0 times Physical_fighting=0 times Miss_school_no_permission=0 days 839 ==> Bullied_in_school=Yes 839    conf:(1)
+  2. Bullied_outside_school=Yes Physically_attacked=0 times Physical_fighting=0 times Miss_school_no_permission=0 days 839 ==> Bullied_in_school=Yes 839    conf:(1)
+  3. Cyber_bullied=Yes Physically_attacked=0 times Physical_fighting=0 times Miss_school_no_permission=0 days 839 ==> Bullied_in_school=Yes 839    conf:(1)
+  4. Bullied_outside_school=Yes Cyber_bullied=Yes Physically_attacked=0 times Physical_fighting=0 times Miss_school_no_permission=0 days 839 ==> Bullied_in_school=Yes 839    conf:(1)
+  5. Felt_lonely=Sometimes 668 ==> Bullied_in_school=Yes 668    conf:(1)
+  6. Bullied_outside_school=Yes Felt_lonely=Sometimes 668 ==> Bullied_in_school=Yes 668    conf:(1)
+  7. Cyber_bullied=Yes Felt_lonely=Sometimes 668 ==> Bullied_in_school=Yes 668    conf:(1)
+  8. Bullied_outside_school=Yes Cyber_bullied=Yes Felt_lonely=Sometimes 668 ==> Bullied_in_school=Yes 668    conf:(1)
+  9. Other_students_kind_and_helpful=Rarely 603 ==> Bullied_in_school=Yes 603    conf:(1)
+ 10. Bullied_outside_school=Yes Other_students_kind_and_helpful=Rarely 603 ==> Bullied_in_school=Yes 603    conf:(1)
+ 11. Cyber_bullied=Yes Other_students_kind_and_helpful=Rarely 603 ==> Bullied_in_school=Yes 603    conf:(1)
+ 12. Bullied_outside_school=Yes Cyber_bullied=Yes Other_students_kind_and_helpful=Rarely 603 ==> Bullied_in_school=Yes 603    conf:(1)
+ 13. Parents_understand_problems=Never 575 ==> Bullied_in_school=Yes 575    conf:(1)
+ 14. Bullied_outside_school=Yes Parents_understand_problems=Never 575 ==> Bullied_in_school=Yes 575    conf:(1)
+ 15. Cyber_bullied=Yes Parents_understand_problems=Never 575 ==> Bullied_in_school=Yes 575    conf:(1)
+ 16. Bullied_outside_school=Yes Cyber_bullied=Yes Parents_understand_problems=Never 575 ==> Bullied_in_school=Yes 575    conf:(1)
+ 17. Other_students_kind_and_helpful=Sometimes 573 ==> Bullied_in_school=Yes 573    conf:(1)
+ 18. Bullied_outside_school=Yes Other_students_kind_and_helpful=Sometimes 573 ==> Bullied_in_school=Yes 573    conf:(1)
+ 19. Cyber_bullied=Yes Other_students_kind_and_helpful=Sometimes 573 ==> Bullied_in_school=Yes 573    conf:(1)
+ 20. Bullied_outside_school=Yes Cyber_bullied=Yes Other_students_kind_and_helpful=Sometimes 573 ==> Bullied_in_school=Yes 573    conf:(1)
+ 21. Other_students_kind_and_helpful=Most of the time 532 ==> Bullied_in_school=Yes 532    conf:(1)
+ 22. Bullied_outside_school=Yes Other_students_kind_and_helpful=Most of the time 532 ==> Bullied_in_school=Yes 532    conf:(1)
+ 23. Cyber_bullied=Yes Other_students_kind_and_helpful=Most of the time 532 ==> Bullied_in_school=Yes 532    conf:(1)
+ 24. Bullied_outside_school=Yes Cyber_bullied=Yes Other_students_kind_and_helpful=Most of the time 532 ==> Bullied_in_school=Yes 532    conf:(1)
+ 25. Felt_lonely=Most of the time 486 ==> Bullied_in_school=Yes 486    conf:(1)
+ 26. Bullied_outside_school=Yes Felt_lonely=Most of the time 486 ==> Bullied_in_school=Yes 486    conf:(1)
+ 27. Cyber_bullied=Yes Felt_lonely=Most of the time 486 ==> Bullied_in_school=Yes 486    conf:(1)
+ 28. Bullied_outside_school=Yes Cyber_bullied=Yes Felt_lonely=Most of the time 486 ==> Bullied_in_school=Yes 486    conf:(1)
+ 29. Parents_understand_problems=Rarely 476 ==> Bullied_in_school=Yes 476    conf:(1)
+ 30. Bullied_outside_school=Yes Parents_understand_problems=Rarely 476 ==> Bullied_in_school=Yes 476    conf:(1)
+ 31. Cyber_bullied=Yes Parents_understand_problems=Rarely 476 ==> Bullied_in_school=Yes 476    conf:(1)
+ 32. Bullied_outside_school=Yes Cyber_bullied=Yes Parents_understand_problems=Rarely 476 ==> Bullied_in_school=Yes 476    conf:(1)
+ 33. Physical_fighting=0 times Felt_lonely=Sometimes 455 ==> Bullied_in_school=Yes 455    conf:(1)
+ 34. Bullied_outside_school=Yes Physical_fighting=0 times Felt_lonely=Sometimes 455 ==> Bullied_in_school=Yes 455    conf:(1)
+ 35. Cyber_bullied=Yes Physical_fighting=0 times Felt_lonely=Sometimes 455 ==> Bullied_in_school=Yes 455    conf:(1)
+ 36. Bullied_outside_school=Yes Cyber_bullied=Yes Physical_fighting=0 times Felt_lonely=Sometimes 455 ==> Bullied_in_school=Yes 455    conf:(1)
+ 37. Miss_school_no_permission=1 or 2 days 436 ==> Bullied_in_school=Yes 436    conf:(1)
+ 38. Bullied_outside_school=Yes Miss_school_no_permission=1 or 2 days 436 ==> Bullied_in_school=Yes 436    conf:(1)
+ 39. Cyber_bullied=Yes Miss_school_no_permission=1 or 2 days 436 ==> Bullied_in_school=Yes 436    conf:(1)
+ 40. Bullied_outside_school=Yes Cyber_bullied=Yes Miss_school_no_permission=1 or 2 days 436 ==> Bullied_in_school=Yes 436    conf:(1)
+ 41. Physically_attacked=0 times Felt_lonely=Sometimes 434 ==> Bullied_in_school=Yes 434    conf:(1)
+ 42. Bullied_outside_school=Yes Physically_attacked=0 times Felt_lonely=Sometimes 434 ==> Bullied_in_school=Yes 434    conf:(1)
+ 43. Cyber_bullied=Yes Physically_attacked=0 times Felt_lonely=Sometimes 434 ==> Bullied_in_school=Yes 434    conf:(1)
+ 44. Bullied_outside_school=Yes Cyber_bullied=Yes Physically_attacked=0 times Felt_lonely=Sometimes 434 ==> Bullied_in_school=Yes 434    conf:(1)
+ 45. Felt_lonely=Sometimes Miss_school_no_permission=0 days 427 ==> Bullied_in_school=Yes 427    conf:(1)
+ 46. Bullied_outside_school=Yes Felt_lonely=Sometimes Miss_school_no_permission=0 days 427 ==> Bullied_in_school=Yes 427    conf:(1)
+ 47. Cyber_bullied=Yes Felt_lonely=Sometimes Miss_school_no_permission=0 days 427 ==> Bullied_in_school=Yes 427    conf:(1)
+ 48. Bullied_outside_school=Yes Cyber_bullied=Yes Felt_lonely=Sometimes Miss_school_no_permission=0 days 427 ==> Bullied_in_school=Yes 427    conf:(1)
+ 49. Parents_understand_problems=Sometimes 424 ==> Bullied_in_school=Yes 424    conf:(1)
+ 50. Bullied_outside_school=Yes Parents_understand_problems=Sometimes 424 ==> Bullied_in_school=Yes 424    conf:(1)
+ 51. Cyber_bullied=Yes Parents_understand_problems=Sometimes 424 ==> Bullied_in_school=Yes 424    conf:(1)
+ 52. Bullied_outside_school=Yes Cyber_bullied=Yes Parents_understand_problems=Sometimes 424 ==> Bullied_in_school=Yes 424    conf:(1)
+ 53. Felt_lonely=Rarely 408 ==> Bullied_in_school=Yes 408    conf:(1)
+ 54. Bullied_outside_school=Yes Felt_lonely=Rarely 408 ==> Bullied_in_school=Yes 408    conf:(1)
+ 55. Cyber_bullied=Yes Felt_lonely=Rarely 408 ==> Bullied_in_school=Yes 408    conf:(1)
+ 56. Bullied_outside_school=Yes Cyber_bullied=Yes Felt_lonely=Rarely 408 ==> Bullied_in_school=Yes 408    conf:(1)
+ 57. Physical_fighting=0 times Other_students_kind_and_helpful=Most of the time 402 ==> Bullied_in_school=Yes 402    conf:(1)
+ 58. Bullied_outside_school=Yes Physical_fighting=0 times Other_students_kind_and_helpful=Most of the time 402 ==> Bullied_in_school=Yes 402    conf:(1)
+ 59. Cyber_bullied=Yes Physical_fighting=0 times Other_students_kind_and_helpful=Most of the time 402 ==> Bullied_in_school=Yes 402    conf:(1)
+ 60. Bullied_outside_school=Yes Cyber_bullied=Yes Physical_fighting=0 times Other_students_kind_and_helpful=Most of the time 402 ==> Bullied_in_school=Yes 402    conf:(1)
+ 61. Physical_fighting=0 times Other_students_kind_and_helpful=Sometimes 394 ==> Bullied_in_school=Yes 394    conf:(1)
+ 62. Physical_fighting=0 times Other_students_kind_and_helpful=Rarely 394 ==> Bullied_in_school=Yes 394    conf:(1)
+ 63. Bullied_outside_school=Yes Physical_fighting=0 times Other_students_kind_and_helpful=Sometimes 394 ==> Bullied_in_school=Yes 394    conf:(1)
+ 64. Bullied_outside_school=Yes Physical_fighting=0 times Other_students_kind_and_helpful=Rarely 394 ==> Bullied_in_school=Yes 394    conf:(1)
+ 65. Cyber_bullied=Yes Physical_fighting=0 times Other_students_kind_and_helpful=Sometimes 394 ==> Bullied_in_school=Yes 394    conf:(1)
+ 66. Cyber_bullied=Yes Physical_fighting=0 times Other_students_kind_and_helpful=Rarely 394 ==> Bullied_in_school=Yes 394    conf:(1)
+ 67. Bullied_outside_school=Yes Cyber_bullied=Yes Physical_fighting=0 times Other_students_kind_and_helpful=Sometimes 394 ==> Bullied_in_school=Yes 394    conf:(1)
+ 68. Bullied_outside_school=Yes Cyber_bullied=Yes Physical_fighting=0 times Other_students_kind_and_helpful=Rarely 394 ==> Bullied_in_school=Yes 394    conf:(1)
+ 69. Parents_understand_problems=Always 386 ==> Bullied_in_school=Yes 386    conf:(1)
+ 70. Bullied_outside_school=Yes Parents_understand_problems=Always 386 ==> Bullied_in_school=Yes 386    conf:(1)
+ 71. Cyber_bullied=Yes Parents_understand_problems=Always 386 ==> Bullied_in_school=Yes 386    conf:(1)
+ 72. Bullied_outside_school=Yes Cyber_bullied=Yes Parents_understand_problems=Always 386 ==> Bullied_in_school=Yes 386    conf:(1)
+ 73. Physically_attacked=0 times Other_students_kind_and_helpful=Most of the time 377 ==> Bullied_in_school=Yes 377    conf:(1)
+ 74. Bullied_outside_school=Yes Physically_attacked=0 times Other_students_kind_and_helpful=Most of the time 377 ==> Bullied_in_school=Yes 377    conf:(1)
+ 75. Cyber_bullied=Yes Physically_attacked=0 times Other_students_kind_and_helpful=Most of the time 377 ==> Bullied_in_school=Yes 377    conf:(1)
+ 76. Bullied_outside_school=Yes Cyber_bullied=Yes Physically_attacked=0 times Other_students_kind_and_helpful=Most of the time 377 ==> Bullied_in_school=Yes 377    conf:(1)
+ 77. Physical_fighting=0 times Parents_understand_problems=Never 374 ==> Bullied_in_school=Yes 374    conf:(1)
+ 78. Bullied_outside_school=Yes Physical_fighting=0 times Parents_understand_problems=Never 374 ==> Bullied_in_school=Yes 374    conf:(1)
+ 79. Cyber_bullied=Yes Physical_fighting=0 times Parents_understand_problems=Never 374 ==> Bullied_in_school=Yes 374    conf:(1)
+ 80. Bullied_outside_school=Yes Cyber_bullied=Yes Physical_fighting=0 times Parents_understand_problems=Never 374 ==> Bullied_in_school=Yes 374    conf:(1)
+ 81. Physically_attacked=0 times Other_students_kind_and_helpful=Sometimes 365 ==> Bullied_in_school=Yes 365    conf:(1)
+ 82. Bullied_outside_school=Yes Physically_attacked=0 times Other_students_kind_and_helpful=Sometimes 365 ==> Bullied_in_school=Yes 365    conf:(1)
+ 83. Cyber_bullied=Yes Physically_attacked=0 times Other_students_kind_and_helpful=Sometimes 365 ==> Bullied_in_school=Yes 365    conf:(1)
+ 84. Bullied_outside_school=Yes Cyber_bullied=Yes Physically_attacked=0 times Other_students_kind_and_helpful=Sometimes 365 ==> Bullied_in_school=Yes 365    conf:(1)
+ 85. Miss_school_no_permission=0 days Other_students_kind_and_helpful=Rarely 360 ==> Bullied_in_school=Yes 360    conf:(1)
+ 86. Bullied_outside_school=Yes Miss_school_no_permission=0 days Other_students_kind_and_helpful=Rarely 360 ==> Bullied_in_school=Yes 360    conf:(1)
+ 87. Cyber_bullied=Yes Miss_school_no_permission=0 days Other_students_kind_and_helpful=Rarely 360 ==> Bullied_in_school=Yes 360    conf:(1)
+ 88. Bullied_outside_school=Yes Cyber_bullied=Yes Miss_school_no_permission=0 days Other_students_kind_and_helpful=Rarely 360 ==> Bullied_in_school=Yes 360    conf:(1)
+ 89. Miss_school_no_permission=0 days Other_students_kind_and_helpful=Most of the time 359 ==> Bullied_in_school=Yes 359    conf:(1)
+ 90. Bullied_outside_school=Yes Miss_school_no_permission=0 days Other_students_kind_and_helpful=Most of the time 359 ==> Bullied_in_school=Yes 359    conf:(1)
+ 91. Cyber_bullied=Yes Miss_school_no_permission=0 days Other_students_kind_and_helpful=Most of the time 359 ==> Bullied_in_school=Yes 359    conf:(1)
+ 92. Bullied_outside_school=Yes Cyber_bullied=Yes Miss_school_no_permission=0 days Other_students_kind_and_helpful=Most of the time 359 ==> Bullied_in_school=Yes 359    conf:(1)
+ 93. Miss_school_no_permission=0 days Other_students_kind_and_helpful=Sometimes 357 ==> Bullied_in_school=Yes 357    conf:(1)
+ 94. Bullied_outside_school=Yes Miss_school_no_permission=0 days Other_students_kind_and_helpful=Sometimes 357 ==> Bullied_in_school=Yes 357    conf:(1)
+ 95. Cyber_bullied=Yes Miss_school_no_permission=0 days Other_students_kind_and_helpful=Sometimes 357 ==> Bullied_in_school=Yes 357    conf:(1)
+ 96. Bullied_outside_school=Yes Cyber_bullied=Yes Miss_school_no_permission=0 days Other_students_kind_and_helpful=Sometimes 357 ==> Bullied_in_school=Yes 357    conf:(1)
+ 97. Parents_understand_problems=Most of the time 355 ==> Bullied_in_school=Yes 355    conf:(1)
+ 98. Bullied_outside_school=Yes Parents_understand_problems=Most of the time 355 ==> Bullied_in_school=Yes 355    conf:(1)
+ 99. Cyber_bullied=Yes Parents_understand_problems=Most of the time 355 ==> Bullied_in_school=Yes 355    conf:(1)
+100. Bullied_outside_school=Yes Cyber_bullied=Yes Parents_understand_problems=Most of the time 355 ==> Bullied_in_school=Yes 355    conf:(1)
+
